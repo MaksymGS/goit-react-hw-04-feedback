@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button, ButtonWrap } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+export const FeedbackOptions = ({ propFeedbacks, onLeaveFeedback }) => {
     return (
     <ButtonWrap>
-      {options.map((item, idx) => (
+      {propFeedbacks.map((item, idx) => (
         <Button
           key={idx}
           value={item}
